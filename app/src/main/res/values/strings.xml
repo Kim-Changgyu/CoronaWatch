@@ -1,0 +1,99 @@
+<resources>
+
+    <string name="app_name">CoronaWatch</string>
+    <string name="login_title">Corona Watch</string>
+
+    <string name="tv_increase_expression_label">▲</string>
+    <string name="tv_decrease_expression_label">▼</string>
+    <string name="tv_rate_of_variation_label">increase and decrease ▲ ▼</string>
+    <string name="tv_region_label">region</string>
+    <string name="tv_confirmed_label">confirmed</string>
+    <string name="tv_testing_label">testing</string>
+    <string name="tv_isolating_label">isolating</string>
+    <string name="tv_recovered_label">recovered</string>
+    <string name="tv_deaths_label">deaths</string>
+    <string name="tv_confirmed_increase_label">confirmed inc</string>
+    <string name="tv_testing_increase_label">testing inc</string>
+    <string name="tv_recovered_increase_label">recovered inc</string>
+    <string name="tv_deaths_increase_label">deaths inc</string>
+
+    <string name="tv_virus_name">COVID - 19</string>
+    <string name="tv_virus_level1">CONCERN</string>
+    <string name="tv_virus_level2">CAUTION</string>
+    <string name="tv_virus_level3">WARNING</string>
+    <string name="tv_virus_level4">DANGER</string>
+    <string name="tv_virus_level5">!DANGER!</string>
+
+    <string name="hint_signIn_id">Email address</string>
+    <string name="hint_signIn_pw">Password</string>
+
+    <string name="btn_signIn_txt">SIGN IN</string>
+    <string name="btn_signOut_txt">SIGN OUT</string>
+    <string name="btn_signUp_txt">REGISTER</string>
+    <string name="btn_delete_txt">DELETE ACCOUNT</string>
+    <string name="btn_korea_txt">Korea</string>
+    <string name="btn_world_txt">World</string>
+
+    <string name="login_google_txt">Sign in with Google</string>
+
+    <string name="err_login_msg">Please enter it in email format.</string>
+    <string name="err_password_msg">You must have 8 characters in your password.</string>
+
+    <string name="toast_auth_txt1">Authentication completed</string>
+    <string name="toast_auth_txt2">Authentication failed</string>
+    <string name="toast_signOut_txt">sign out completed</string>
+    <string name="toast_check_network_msg">Please check your network connected</string>
+    <string name="toast_permission_check_msg">Location authority is required to provide normal service.</string>
+
+    <string name="dialog_location_title_txt">Location Services Required</string>
+    <string name="dialog_location_msg_txt">Location services are required for using app normally</string>
+    <string name="dialog_location_confirm_txt">CONFIRM</string>
+    <string name="dialog_location_ignore_txt">IGNORE</string>
+    <string name="dialog_location_confirm_msg">Tracing current location.</string>
+    <string name="dialog_location_ignore_msg">If location services are disabled, normal services are not available.</string>
+
+    <string name="dialog_title_txt">Are you sure?</string>
+    <string name="dialog_msg_txt">Deleting this account will result in completely removing your account from the system and you won\'t be able to access the app.</string>
+    <string name="dialog_confirm_txt">DELETE</string>
+    <string name="dialog_cancel_txt">DISMISS</string>
+    <string name="dialog_confirm_msg">The authentication account has been deleted.</string>
+    <string name="dialog_cancel_msg">Deletion of authentication account has been cancelled.</string>
+
+    <string name="sbar_again_back_press_msg">If you press the back button again, the app will be destroyed.</string>
+    <string name="sbar_email_password_msg">please input your email and password</string>
+    <string name="sbar_email_msg">Please input your email</string>
+    <string name="sbar_password_msg">Please input your password</string>
+    <string name="sbar_verify_msg">Registered successfully. please check your email for verification.</string>
+    <string name="sbar_again_verify_msg">Please verify your email address</string>
+    <string name="sbar_login_error_msg">There is no user record corresponding to this identifier. The user may have been deleted.</string>
+
+    <!-- 에러코드 -->
+    <string name="ERROR_INVALID_CUSTOM_TOKEN">The custom token format is incorrect. Please check the documentation.</string>
+    <string name="ERROR_CUSTOM_TOKEN_MISMATCH">The custom token corresponds to a different audience.</string>
+    <string name="ERROR_INVALID_CREDENTIAL">The supplied auth credential is malformed or has expired.</string>
+    <!--    <string name="ERROR_INVALID_EMAIL">The email address is badly formatted.</string>-->
+    <string name="ERROR_WRONG_PASSWORD">The password is invalid or the user does not have a password.</string>
+    <string name="ERROR_WRONG_PASSWORD_TXT">The password is invalid or the user does not have a password.</string>
+    <string name="ERROR_USER_MISMATCH">The supplied credentials do not correspond to the previously signed in user.</string>
+    <string name="ERROR_REQUIRES_RECENT_LOGIN">"This operation is sensitive and requires recent authentication. Log in again before retrying this request."</string>
+    <string name="ERROR_ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL">"An account already exists with the same email address but different sign-in credentials. Sign in using a provider associated with this email address."</string>
+    <string name="ERROR_EMAIL_ALREADY_IN_USE">The email address is already in use by another account.</string>
+    <string name="ERROR_CREDENTIAL_ALREADY_IN_USE">This credential is already associated with a different user account.</string>
+    <string name="ERROR_USER_DISABLED">The user account has been disabled by an administrator.</string>
+    <string name="ERROR_USER_TOKEN_EXPIRED">The user\'s credential is no longer valid. The user must sign in again.</string>
+    <string name="ERROR_USER_NOT_FOUND">There is no user record corresponding to this identifier. The user may have been deleted.</string>
+    <string name="ERROR_INVALID_USER_TOKEN">The users credential is no longer valid. The user must sign in again.</string>
+    <string name="ERROR_OPERATION_NOT_ALLOWED">This operation is not allowed. You must enable this service in the console.</string>
+
+    <string name="or">or</string>
+    <string name="_0">-</string>
+
+    <string name="item_maps_label">Maps</string>
+    <string name="item_stat_label">Statistics</string>
+    <string name="item_graph_label">Graph</string>
+    <string name="tv_source_label_kr">Source: Korean public institutions</string>
+    <string name="tv_source_label_world">Source: Korean public institutions</string>
+    <string name="parsing_world_data_error_msg">World data failed to load.</string>
+    <string name="parsing_server_data_error_msg">Failed to retrieve data due to a data delivery server issue.</string>
+
+</resources>

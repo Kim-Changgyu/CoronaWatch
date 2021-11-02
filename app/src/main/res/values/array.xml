@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="graph_tab">
+        <item>@string/tv_confirmed_label</item>
+        <item>@string/tv_confirmed_increase_label</item>
+        <item>@string/tv_testing_label</item>
+        <item>@string/tv_testing_increase_label</item>
+        <item>@string/tv_recovered_label</item>
+        <item>@string/tv_recovered_increase_label</item>
+        <item>@string/tv_deaths_label</item>
+        <item>@string/tv_deaths_increase_label</item>
+    </string-array>
+</resources>

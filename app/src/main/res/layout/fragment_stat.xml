@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".StatFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_super"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_phase"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/circle_level_5">
+
+            <TextView
+                android:id="@+id/tv_phase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/tv_virus_level5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout_phase">
+
+            <TextView
+                android:id="@+id/tv_virus_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_virus_name"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_state_date_kr_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_virus_name_label"
+                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="2020-11-02 09시 기준" />
+
+            <TextView
+                android:id="@+id/tv_state_date_nat_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@id/tv_virus_name_label"
+                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:background="#555555"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout_phase" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view">
+
+            <Button
+                android:id="@+id/btn_korea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_stroke_checked"
+                android:text="@string/btn_korea_txt"
+                app:layout_constraintEnd_toStartOf="@id/btn_world"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.4" />
+
+            <Button
+                android:id="@+id/btn_world"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_stroke"
+                android:text="@string/btn_world_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/btn_korea"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.4"
+                tools:ignore="OnClick" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_kr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="20dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout_btn"
+            tools:layout_editor_absoluteX="1dp">
+
+            <TextView
+                android:id="@+id/tv_decideCnt_label_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_confirmed_label"
+                android:textColor="#FF0000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constraintLayout_kr" />
+
+            <TextView
+                android:id="@+id/tv_decideCnt_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_decideCnt_label_kr"
+                tools:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/tv_decideIncrease_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/tv_increase_expression_label"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_decideCnt_kr" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="2dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:background="#555555"
+                app:layout_constraintBottom_toTopOf="@+id/tv_death_label_kr"
+                app:layout_constraintEnd_toStartOf="@+id/tv_clearCnt_kr"
+                app:layout_constraintStart_toEndOf="@+id/tv_examCnt_kr"
+                app:layout_constraintTop_toBottomOf="@+id/tv_decideIncrease_kr" />
+
+            <TextView
+                android:id="@+id/tv_exam_label_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/tv_testing_label"
+                android:textColor="#FFC107"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_decideIncrease_kr" />
+
+            <TextView
+                android:id="@+id/tv_examCnt_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFC107"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_exam_label_kr"
+                app:layout_constraintStart_toStartOf="@id/tv_exam_label_kr"
+                app:layout_constraintTop_toBottomOf="@id/tv_exam_label_kr"
+                tools:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/tv_examIncrease_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/tv_increase_expression_label"
+                android:textColor="#FFC107"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_examCnt_kr"
+                app:layout_constraintStart_toStartOf="@id/tv_examCnt_kr"
+                app:layout_constraintTop_toBottomOf="@id/tv_examCnt_kr" />
+
+            <TextView
+                android:id="@+id/tv_clear_label_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/tv_recovered_label"
+                android:textColor="#3F51B5"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_decideIncrease_kr" />
+
+            <TextView
+                android:id="@+id/tv_clearCnt_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3F51B5"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_clear_label_kr"
+                app:layout_constraintStart_toStartOf="@id/tv_clear_label_kr"
+                app:layout_constraintTop_toBottomOf="@id/tv_clear_label_kr"
+                tools:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/tv_clearIncrease_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/tv_increase_expression_label"
+                android:textColor="#3F51B5"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_clearCnt_kr"
+                app:layout_constraintStart_toStartOf="@id/tv_clearCnt_kr"
+                app:layout_constraintTop_toBottomOf="@id/tv_clearCnt_kr" />
+
+            <TextView
+                android:id="@+id/tv_death_label_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:text="@string/tv_deaths_label"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_decideIncrease_kr" />
+
+            <TextView
+                android:id="@+id/tv_deathCnt_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_death_label_kr"
+                app:layout_constraintStart_toStartOf="@id/tv_death_label_kr"
+                app:layout_constraintTop_toBottomOf="@id/tv_death_label_kr"
+                tools:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/tv_deathIncrease_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/tv_increase_expression_label"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_deathCnt_kr"
+                app:layout_constraintStart_toStartOf="@id/tv_deathCnt_kr"
+                app:layout_constraintTop_toBottomOf="@id/tv_deathCnt_kr" />
+
+            <TextView
+                android:id="@+id/tv_label_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:padding="7.5dp"
+                android:text="@string/tv_rate_of_variation_label"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_clearIncrease_kr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7.5dp"
+                android:text="@string/tv_source_label_kr"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_label_kr" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_world"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="25dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_kr"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout_btn">
+
+            <TextView
+                android:id="@+id/tv_decideCnt_label_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_confirmed_label"
+                android:textColor="#FF0000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constraintLayout_world" />
+
+            <TextView
+                android:id="@+id/tv_decideCnt_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_decideIncrease_world"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_decideCnt_label_world"
+                tools:text="@string/_0" />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/pb_decideCnt_world"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_decideIncrease_world"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_decideCnt_label_world" />
+
+            <TextView
+                android:id="@+id/tv_decideIncrease_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/tv_increase_expression_label"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_decideCnt_world" />
+
+            <TextView
+                android:id="@+id/tv_death_label_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/tv_deaths_label"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_decideIncrease_world" />
+
+            <TextView
+                android:id="@+id/tv_deathCnt_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_deathIncrease_world"
+                app:layout_constraintEnd_toEndOf="@id/tv_death_label_world"
+                app:layout_constraintStart_toStartOf="@id/tv_death_label_world"
+                app:layout_constraintTop_toBottomOf="@id/tv_death_label_world"
+                tools:text="@string/_0" />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/pb_deathCnt_world"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_deathIncrease_world"
+                app:layout_constraintEnd_toEndOf="@id/tv_death_label_world"
+                app:layout_constraintStart_toStartOf="@id/tv_death_label_world"
+                app:layout_constraintTop_toBottomOf="@id/tv_death_label_world" />
+
+            <TextView
+                android:id="@+id/tv_deathIncrease_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/tv_increase_expression_label"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_deathCnt_world"
+                app:layout_constraintStart_toStartOf="@id/tv_deathCnt_world"
+                app:layout_constraintTop_toBottomOf="@id/tv_deathCnt_world" />
+
+
+            <TextView
+                android:id="@+id/tv_label_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:padding="7.5dp"
+                android:text="@string/tv_rate_of_variation_label"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_deathIncrease_world" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7.5dp"
+                android:text="@string/tv_source_label_world"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_label_world" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout_kr"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listView_kr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="none"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
+                tools:ignore="NestedScrolling" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

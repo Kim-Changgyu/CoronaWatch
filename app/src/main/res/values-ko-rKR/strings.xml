@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">코로나왓치</string>
+    <string name="login_title">코로나 왓치</string>
+
+    <string name="tv_increase_expression_label">▲</string>
+    <string name="tv_decrease_expression_label">▼</string>
+    <string name="tv_rate_of_variation_label">전일 대비 증감 ▲▼</string>
+    <string name="tv_region_label">지역</string>
+    <string name="tv_confirmed_label">확진자</string>
+    <string name="tv_testing_label">검사진행</string>
+    <string name="tv_recovered_label">격리해제</string>
+    <string name="tv_isolating_label">격리 중</string>
+    <string name="tv_deaths_label">사망자</string>
+    <string name="tv_confirmed_increase_label">확진자 증감</string>
+    <string name="tv_testing_increase_label">검사진행 증감</string>
+    <string name="tv_recovered_increase_label">격리해제 증감</string>
+    <string name="tv_deaths_increase_label">사망자 증감</string>
+
+    <string name="tv_virus_name">COVID - 19</string>
+    <string name="tv_virus_level1">1단계</string>
+    <string name="tv_virus_level2">1.5단계</string>
+    <string name="tv_virus_level3">2단계</string>
+    <string name="tv_virus_level4">2.5단계</string>
+    <string name="tv_virus_level5">3단계</string>
+
+    <string name="tv_source_label_kr">출처: 공공데이터포털</string>
+    <string name="tv_source_label_world">출처: 공공데이터포털</string>
+
+    <string name="hint_signIn_id">이메일 계정</string>
+    <string name="hint_signIn_pw">비밀번호</string>
+
+    <string name="btn_signIn_txt">로그인</string>
+    <string name="btn_signOut_txt">로그아웃</string>
+    <string name="btn_signUp_txt">이메일 등록</string>
+    <string name="btn_delete_txt">계정 삭제</string>
+    <string name="btn_korea_txt">국내</string>
+    <string name="btn_world_txt">세계</string>
+
+    <string name="login_google_txt">구글 로그인</string>
+
+    <string name="err_login_msg">이메일 형식으로 입력해주세요.</string>
+    <string name="err_password_msg">비밀번호는 최소 8자 이상 입력해주세요.</string>
+
+    <string name="toast_auth_txt1">인증에 성공하였습니다.</string>
+    <string name="toast_auth_txt2">인증에 실패하였습니다.</string>
+    <string name="toast_signOut_txt">로그아웃 하였습니다.</string>
+    <string name="toast_check_network_msg">네트워크 연결상태를 확인해주세요.</string>
+    <string name="toast_permission_check_msg">정상적인 서비스 제공을 위해 위치 권한이 필요합니다.</string>
+
+    <string name="dialog_location_title_txt">위치 서비스 요청</string>
+    <string name="dialog_location_msg_txt">정상적인 앱 서비스를 제공하기 위해 위치 설정 페이지에서 서비스를 활성화해주세요.</string>
+    <string name="dialog_location_confirm_txt">확인</string>
+    <string name="dialog_location_ignore_txt">무시</string>
+    <string name="dialog_location_confirm_msg">현재 위치를 추적합니다.</string>
+    <string name="dialog_location_ignore_msg">위치 서비스를 비활성화할 경우, 코로나 왓치를 이용하실 수 없습니다.</string>
+
+    <string name="dialog_title_txt">정말 삭제하시겠습니까?</string>
+    <string name="dialog_msg_txt">계정이 시스템에서 완전히 삭제되며, 더 이상 앱을 사용할 수 없게 됩니다.</string>
+    <string name="dialog_confirm_txt">확인</string>
+    <string name="dialog_cancel_txt">취소</string>>
+    <string name="dialog_confirm_msg">인증계정이 삭제되었습니다.</string>
+    <string name="dialog_cancel_msg">인증계정 삭제가 취소되었습니다.</string>
+
+    <string name="sbar_again_back_press_msg">뒤로가기 버튼을 한번 더 누르면 앱을 종료합니다.</string>
+    <string name="sbar_email_password_msg">이메일과 비밀번호를 입력해주세요.</string>
+    <string name="sbar_email_msg">이메일을 입력해주세요.</string>
+    <string name="sbar_password_msg">비밀번호를 입력해주세요.</string>
+    <string name="sbar_verify_msg">위 메 주소로 발송한 메일 내용의 링크를 클릭하여 사용자 등록을 완료해주세요.</string>
+    <string name="sbar_again_verify_msg">등록한 메일 주소로 발송된 메일의 링크를 클릭하여 사용자 등록을 완료해주세요.</string>
+    <string name="sbar_login_error_msg">이메일 등록되어 있지 않거나 해당 사용자가 삭제되었을 수 있습니다.</string>
+
+    <!-- 에러코드 -->
+    <string name="ERROR_INVALID_CUSTOM_TOKEN">인증 오류: 사용자 정의 토큰 형식이 잘못되었습니다. 해당 에러가 지속되면 개발자에게 문의해주세요.</string>
+    <string name="ERROR_CUSTOM_TOKEN_MISMATCH">인증 오류: 사용자 정의 토큰이 다른 대상에 해당합니다. 해당 에러가 지속되면 개발자에게 문의해주세요.</string>
+    <string name="ERROR_INVALID_CREDENTIAL">인증 오류: 제공된 인증 자격 증명의 형식이 잘못되었거나 만료되었습니다. 해당 에러가 지속되면 개발자에게 문의해주세요.</string>
+    <!--    <string name="ERROR_INVALID_EMAIL">인증 오류: 이메일 주소의 형식이 잘못되었습니다.</string>-->
+    <string name="ERROR_WRONG_PASSWORD_TXT">패스워드가 일치하지 않습니다.</string>
+    <string name="ERROR_WRONG_PASSWORD">로그인 오류: 비밀번호가 잘못 입력되었거나 해당 계정에 존재하지 않습니다. 비밀번호를 잊어버리신 경우 개발자에게 문의해주세요.</string>
+    <string name="ERROR_USER_MISMATCH">로그인 오류: 제공된 자격 증명이 이전에 로그인한 사용자와 일치하지 않습니다. 해당 에러가 지속되면 개발자에게 문의해주세요.</string>
+    <string name="ERROR_REQUIRES_RECENT_LOGIN">이 작업은 민감하며 최신 인증이 필요합니다. 요청을 재시도하기 전에 다시 로그인해주세요.</string>
+    <string name="ERROR_ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL">로그인 오류: 이메일 주소는 동일하지만 로그인 자격 증명이 다른 계정에 존재합니다. 이 이메일 주소와 연결된 제공 업체를 사용하여 다시 로그인 해주세요.</string>
+    <string name="ERROR_EMAIL_ALREADY_IN_USE">해당 이메일 주소는 이미 존재합니다.</string>
+    <string name="ERROR_CREDENTIAL_ALREADY_IN_USE">해당 계정의 자격 증명이 이미 다른 사용자 계정과 연결되어 있습니다.</string>
+    <string name="ERROR_USER_DISABLED">해당 계정은 비활성화되었습니다.</string>
+    <string name="ERROR_USER_TOKEN_EXPIRED">해당 계정의 자격증명이 더 이상 유효하지 않으므로, 잠시 후에 다시 시도하세요.</string>
+    <string name="ERROR_USER_NOT_FOUND">해당 계정을 찾을 수 없습니다.</string>
+    <string name="ERROR_INVALID_USER_TOKEN">사용자 자격 증명이 더 이상 유효하지 않으므로, 재인증이 필요합니다.</string>
+    <string name="ERROR_OPERATION_NOT_ALLOWED">허용되지 않은 작업이므로, 개발자에게 문의해주세요.</string>
+
+    <string name="or">또는</string>
+    <string name="_0">-</string>
+
+    <string name="item_maps_label">지도</string>
+    <string name="item_stat_label">통계</string>
+    <string name="item_graph_label">그래프</string>
+
+    <string name="parsing_world_data_error_msg">세계 데이터 불러오기 실패</string>
+    <string name="parsing_server_data_error_msg">데이터 전송 서버 문제로 인해 세계 데이터를 불러오지 못했습니다.</string>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/defBarChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="500dp"
+        app:layout_constraintHeight_min="300dp"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="600dp"
+        app:layout_constraintWidth_min="300dp"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/examBarChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/defBarChart"
+        app:layout_constraintEnd_toEndOf="@id/defBarChart"
+        app:layout_constraintStart_toStartOf="@id/defBarChart"
+        app:layout_constraintTop_toTopOf="@id/defBarChart" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/clearBarChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/defBarChart"
+        app:layout_constraintEnd_toEndOf="@id/defBarChart"
+        app:layout_constraintStart_toStartOf="@id/defBarChart"
+        app:layout_constraintTop_toTopOf="@id/defBarChart" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/deathBarChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/defBarChart"
+        app:layout_constraintEnd_toEndOf="@id/defBarChart"
+        app:layout_constraintStart_toStartOf="@id/defBarChart"
+        app:layout_constraintTop_toTopOf="@id/defBarChart" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/defIncBarChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/defBarChart"
+        app:layout_constraintEnd_toEndOf="@id/defBarChart"
+        app:layout_constraintStart_toStartOf="@id/defBarChart"
+        app:layout_constraintTop_toTopOf="@id/defBarChart" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/examIncBarChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/defBarChart"
+        app:layout_constraintEnd_toEndOf="@id/defBarChart"
+        app:layout_constraintStart_toStartOf="@id/defBarChart"
+        app:layout_constraintTop_toTopOf="@id/defBarChart" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/clearIncBarChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/defBarChart"
+        app:layout_constraintEnd_toEndOf="@id/defBarChart"
+        app:layout_constraintStart_toStartOf="@id/defBarChart"
+        app:layout_constraintTop_toTopOf="@id/defBarChart" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/deathIncBarChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/defBarChart"
+        app:layout_constraintEnd_toEndOf="@id/defBarChart"
+        app:layout_constraintStart_toStartOf="@id/defBarChart"
+        app:layout_constraintTop_toTopOf="@id/defBarChart" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/defBarChart"
+        app:layout_constraintDimensionRatio="w,2:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="650dp"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="160dp"
+        app:layout_constraintWidth_min="160dp"
+        app:layout_constraintWidth_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
